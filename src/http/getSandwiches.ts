@@ -1,12 +1,5 @@
 import { supabase } from "src/supabaseClient";
-
-// type Sandwich = {
-//   id: string;
-//   description: string;
-//   imageUrl: string;
-//   name: string;
-//   price: string;
-// };
+import { Sandwich } from "src/types/Sandwich";
 
 export const getSandwiches = async (): Promise<Sandwich[]> => {
   const { data, error } = await supabase.from("sandwiches").select();
