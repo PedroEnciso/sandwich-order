@@ -1,0 +1,45 @@
+.sandwichItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.sandwichItem img {
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.bottomContainer {
+  display: flex;
+  gap: 1.5rem;
+  align-items: end;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.price {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.bottomContainer button {
+  max-width: 300px;
+  margin-top: 1rem;
+  padding: 10px 6px;
+  flex-grow: 1;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.35s, background-color 0.35s;
+}
+
+.bottomContainer button:hover {
+  background-color: #1d4ed8;
+  color: #dbeafe;
+}
