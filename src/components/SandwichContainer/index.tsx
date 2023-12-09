@@ -24,10 +24,10 @@ function SandwichList() {
             <SandwichItem
               key={sandwich.id}
               name={sandwich.name}
-              description={sandwich.description}
+              description={sandwich.description ? sandwich.description : ""}
               id={sandwich.id}
-              price={sandwich.price}
-              imageUrl={sandwich.imageUrl}
+              price={sandwich.price ? sandwich.price : ""}
+              imageUrl={sandwich.imageUrl ? sandwich.imageUrl : ""}
             />
           ))}
         </ul>

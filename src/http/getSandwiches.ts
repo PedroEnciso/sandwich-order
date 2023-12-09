@@ -1,8 +1,18 @@
 import { supabase } from "src/supabaseClient";
-import { Sandwich } from "src/types/Sandwich";
+
+interface Sandwich {
+  description: string;
+  id: string;
+  imageUrl: string;
+  name: string;
+  price: string;
+}
 
 export const getSandwiches = async (): Promise<Sandwich[]> => {
-  const { data, error } = await supabase.from("sandwiches").select();
+  const { data, error } = await supabase
+    .from("sandwich")
+    .select()
+    .returns<Sandwich[]>();
 
   if (error) {
     throw new Error("Cannot find sandwiches.");
