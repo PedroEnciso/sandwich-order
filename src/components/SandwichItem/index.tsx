@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Sandwich } from "src/types/Sandwich";
+import { Sandwich } from "src/types/sandwich";
 import { getSandwichDetails } from "src/http/getSandwichDetails";
 import Modal from "src/components/Modal";
 import SandwichDetail from "src/components/SandwichDetail";
 import classes from "./SandwichItem.module.css";
 
-import { SandwichDetailType } from "src/types/SandwichDetail";
+import { SandwichDetailType } from "src/types/sandwichDetail";
 
 function SandwichItem({ name, price, description, id, imageUrl }: Sandwich) {
   const [sandwichDetails, setSandwichDetails] =

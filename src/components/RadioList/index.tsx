@@ -1,6 +1,6 @@
 import classes from "src/components/SandwichDetail/SandwichDetail.module.css";
 
-import { Ingredient } from "src/types/SandwichDetail";
+import { Ingredient } from "src/types/sandwichDetail";
 import { ingredientObject } from "src/http/getOptions";
 
 interface RadioListProps {

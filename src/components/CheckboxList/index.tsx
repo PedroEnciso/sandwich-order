@@ -1,5 +1,5 @@
 import { ingredientObject } from "src/http/getOptions";
-import { Ingredient } from "src/types/SandwichDetail";
+import { Ingredient } from "src/types/sandwichDetail";
 
 interface CheckboxListProps {
   selectedArray: Ingredient[] | undefined;
