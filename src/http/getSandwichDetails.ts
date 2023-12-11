@@ -1,5 +1,5 @@
 import { supabase } from "src/supabaseClient";
-import { SandwichDetailType } from "src/types/SandwichDetail";
+import { SandwichDetailType } from "src/types";
 
 export const getSandwichDetails = async (
   id: string
